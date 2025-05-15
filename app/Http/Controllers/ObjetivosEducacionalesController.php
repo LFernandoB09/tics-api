@@ -16,7 +16,7 @@ class ObjetivosEducacionalesController extends Controller
             $objetivos = ObjetivosEducacionales::all();
 
             return response()->json([
-                'profesores' => $objetivos,
+                'objetivos educacionales' => $objetivos,
                 'message' => $objetivos->isEmpty() ? 'No hay objetivos registrados' : 'Completado',
                 'status' => 200
             ], 200);

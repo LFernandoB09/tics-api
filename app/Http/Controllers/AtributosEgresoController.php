@@ -16,7 +16,7 @@ class AtributosEgresoController extends Controller
             $atributos = AtributosEgreso::all();
 
             return response()->json([
-                'materias' => $atributos,
+                'atributos de egreso' => $atributos,
                 'message' => $atributos->isEmpty() ? 'No hay atributos de agreso' : 'Completado',
                 'status' => 200
             ], 200);

@@ -16,7 +16,7 @@ class EgresadosController extends Controller
             $egresados = Egresados::all();
 
             return response()->json([
-                'materias' => $egresados,
+                'egresados' => $egresados,
                 'message' => $egresados->isEmpty() ? 'No hay agresados registrados' : 'Completado',
                 'status' => 200
             ], 200);
